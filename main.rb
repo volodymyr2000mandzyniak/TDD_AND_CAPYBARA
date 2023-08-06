@@ -25,7 +25,6 @@ parser = MovieParser.new(url)
 links = ['Вход', 'Sign In', 'Увійти', 'Login', 'Log in']
 item = parser.find_matching_link_in_page(links)
 
-# Передаємо аргументи username і password, що відповідають вашим env змінним REZKA_USERNAME і REZKA_PASSWORD
 parser.click_login_button(item)
 file_name = parser.search_movie(movie)
 
